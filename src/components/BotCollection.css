@@ -1,8 +1,4 @@
-.bot-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-}
+
 
 .bot-card {
   display: flex;
@@ -15,15 +11,11 @@
   border-radius: 8px;
 }
 
-.bot-info {
-  text-align: center;
-  font-size: 0.2rem;
-}
 
 .bot-card img {
-  width: 100%;
+  width: 60%;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   background-color: whitesmoke;
 }
 
@@ -41,7 +33,27 @@
 .delete-button {
   background-color: red;
   color: white;
-  border: none;
+}
+
+
+
+
+.bot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.bot-card {
+  background-color: #f9f9f9;
+  padding: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
