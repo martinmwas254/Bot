@@ -1,0 +1,47 @@
+.bot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.bot-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.1rem;
+  background-color: #edebf3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.bot-info {
+  text-align: center;
+  font-size: 0.2rem;
+}
+
+.bot-card img {
+  width: 60%;
+  height: auto;
+  margin-bottom: 1rem;
+  background-color: whitesmoke;
+}
+
+.bot- {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #e0dee9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
