@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import "./BotCollection.css";
+import "./"
 import BotArmy from "./YourBotArmy";
 const BotCollection = () => {
 const [bots, setBots] = useState([]);
@@ -38,10 +38,10 @@ setBotArmy((prevArmy) => [...prevArmy, bot]);
 localStorage.setItem("botArmy", JSON.stringify([...botArmy, bot]));
 };
 const removeBot = (bot) => {
-setBotArmy((prevArmy) => prevArmy.filter((b) => b.id !== bot.id));
+setBotArmy((prevArmy) => prevArmy.filter((bot) => bot.id !== bot.id));
 localStorage.setItem(
 "botArmy",
-JSON.stringify(botArmy.filter((b) => b.id !== bot.id))
+JSON.stringify(botArmy.filter((bot) => bot.id !== bot.id))
 );
 };
 return (
@@ -57,11 +57,11 @@ onClick={() => enlistBot(bot)}
 >
 <img src={bot.avatar_url} alt="Bot Avatar" />
 <h3>{bot.name}</h3>
-<p>{bot.catchphrase}</p>
-<p>Class: {bot.bot_class}</p>
-<p>Health: {bot.health}</p>
-<p>Damage: {bot.damage}</p>
-<p>Armor: {bot.armor}</p>
+<h4>{bot.catchphrase}</h4>
+<h4>Class: {bot.bot_class}</h4>
+<h4>Health: {bot.health}</h4>
+<h4>Damage: {bot.damage}</h4>
+<h4>Armor: {bot.armor}</h4>
 <button onClick={() => deleteBot(bot.id)} className="delete-button">
 X
 </button>

@@ -3,7 +3,10 @@
 Welcome to Bot Battlr, the one and only spot in the known universe where you can custom build your own Bot Army! 
 This project, builds out a React application that displays a list of available bots, among other features.
 ## Installation 
-git clone 
+<li>git clone https://github.com/martinmwas254/Bot.git</li>
+<li>cd Bot</li>
+<li>npm install</li>
+<li>npm start</li>
 ### MIT License
 
 Copyright (c) 2023 martin mwangi
