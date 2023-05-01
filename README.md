@@ -7,42 +7,22 @@ This project, builds out a React application that displays a list of available b
 
 ## Installation
 
-<ol>
-
-<li>
-
 ```
 git clone https://github.com/martinmwas254/Bot.git
 ```
-
-</li>
-
-<li>
 
 ```
 cd Bot
 ```
 
-</li>
-
-<li>
-
 ```
 npm install
 ```
-
-</li>
-
-<li>
 
 ```
 npm start
 
 ```
-
-</li>
-
-</ol>
 
 ### MIT License
 
